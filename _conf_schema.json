@@ -1,0 +1,32 @@
+{
+  "admin_ids": {
+    "type": "list",
+    "description": "更新日志管理员ID",
+    "default": [],
+    "hint": "可添加/删除/管理更新日志的用户ID",
+    "items": {
+      "type": "string"
+    }
+  },
+  "global_whitelist": {
+    "type": "list",
+    "description": "全局更新广播白名单群",
+    "default": [],
+    "hint": "普通更新会自动推送到这里所有群，填写群号或会话ID",
+    "items": {
+      "type": "string"
+    }
+  },
+  "max_show_count": {
+    "type": "int",
+    "description": "群内最大查看日志条数",
+    "default": 5,
+    "hint": "用户在群里最多查看最近N条更新"
+  },
+  "auto_push": {
+    "type": "bool",
+    "description": "添加日志后自动推送",
+    "default": true,
+    "hint": "添加普通/专属更新后，是否自动发送到对应群"
+  }
+}
